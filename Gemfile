@@ -35,5 +35,5 @@ end
 group :development do
   gem 'bfec_generator'
 end
-gem "npm_assets", :path => "/Users/superchris/dev/npm_assets"
+gem "npm_assets"
 gem "jasminerice", :git => "git://github.com/bradphelan/jasminerice.git"
