@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cookbook Menus!</title>
-    <script src="/assets/application.js" type="text/javascript"></script>
-  </head>
   <body data-router="<%= controller_name.titleize %>">
-    <div id="menu-view"></div>
-    <div id="menu-list-view"></div>
+    <h1>Menus</h1>
+    <div class="container-fluid">
+      <div class="sidebar">
+        <div id="menu-list-view"></div>
+      </div>
+      <div class="content">
+        <div id="menu-view"></div>
+      </div>
+    </div>
   </body>
 </html>
+
