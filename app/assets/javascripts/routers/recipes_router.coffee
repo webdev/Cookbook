@@ -1,5 +1,4 @@
 class Cookbook.RecipesRouter extends Backbone.Router
-
   constructor: ->
     @recipeView = new Cookbook.RecipeView(el: $("#recipe-view"))
 
