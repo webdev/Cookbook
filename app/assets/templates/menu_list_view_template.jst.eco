@@ -1,0 +1,7 @@
+<ul>
+<% @collection.each (model) ->: %>
+  <li>
+    <a href='#menus/<%= model.get('id') %>'><%= model.get('title') %></a>
+  </li>
+<% end %>
+</ul>
