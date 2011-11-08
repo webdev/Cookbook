@@ -1,12 +1,20 @@
-<form>
-  <p>
+<form method="post">
+  <div class="clearfix">
     <label>Title</label>
-    <input type="text" name="title" value="<%= @model.get('title') %>" />
-  <p>
+    <div class="input">
+      <input type="text" name="title" value="<%= @model.get('title') %>" />
+    </div>
+  </div>
+  <div class="clearfix">
     <label>Description</label>
-    <input type="text" name="description" value="<%= @model.get('description') %>" />
-  </p>
+    <div class="input">
+      <input type="text" name="description" value="<%= @model.get('description') %>" />
+    </div>
+  </div>
 
   <input type="hidden" name="id" value="<%= @model.get('id') %>" />
 
+  <div class="actions">
+    <input type="submit" class="btn primary" value="Save changes" />
+  </div>
 </form>
