@@ -1,5 +1,4 @@
 $ ->
-  new Cookbook.RecipesRouter
-  new Cookbook.MenusRouter
+  window.router = new Cookbook[routerName]
   Backbone.history.start()
-#  router.navigate("recipes/1", true)
+  router.list()
