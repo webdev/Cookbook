@@ -2,6 +2,7 @@
 <% @collection.each (model) ->: %>
   <li>
     <a href='#menus/<%= model.get('id') %>'><%= model.get('title') %></a>
+    <a href='#menus/<%= model.get('id') %>/edit'>Edit</a>
   </li>
 <% end %>
 </ul>

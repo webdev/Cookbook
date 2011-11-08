@@ -17,3 +17,15 @@ describe "MenusRouter", ->
       expect(@request).toRequest
         method: "GET"
         url: "/menus/1"
+
+
+  describe 'editMenu', ->
+    beforeEach ->
+      spyOn(@router.menuView, 'edit')
+      @router.editMenu(1)
+      @request = mostRecentAjaxRequest()
+      @request.response
+        status: 200
+
+    it 'edits the MenuView', ->
+      expect(@router.menuView.edit).toHaveBeenCalled()

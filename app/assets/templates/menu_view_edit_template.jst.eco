@@ -1,0 +1,12 @@
+<form>
+  <p>
+    <label>Title</label>
+    <input type="text" name="title" value="<%= @model.get('title') %>" />
+  <p>
+    <label>Description</label>
+    <input type="text" name="description" value="<%= @model.get('description') %>" />
+  </p>
+
+  <input type="hidden" name="id" value="<%= @model.get('id') %>" />
+
+</form>
