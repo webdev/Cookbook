@@ -21,11 +21,11 @@ describe "MenusRouter", ->
 
   describe 'editMenu', ->
     beforeEach ->
-      spyOn(@router.menuView, 'edit')
+      spyOn(@router.menuEditView, 'render')
       @router.editMenu(1)
       @request = mostRecentAjaxRequest()
       @request.response
         status: 200
 
     it 'edits the MenuView', ->
-      expect(@router.menuView.edit).toHaveBeenCalled()
+      expect(@router.menuEditView.render).toHaveBeenCalled()
